@@ -1,0 +1,12 @@
+CODE-
+
+void getElements(int arr[],int n)
+{
+    if(n==0 || n==1)
+        cout<<-1<<" "<<-1<<endl;   
+    sort(arr,arr+n);
+    int s=arr[1];
+    int l=arr[n-2];
+    cout<<"Second smallest is:"<<s<<endl;
+    cout<<"Second largest is:"<<l<<endl;
+}
